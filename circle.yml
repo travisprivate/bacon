@@ -1,3 +1,7 @@
-checkout:
-  post:
-    - echo "commit 1"
+machine:
+  environment:
+    foo: yaml
+
+test:
+  override:
+    - echo $foo
